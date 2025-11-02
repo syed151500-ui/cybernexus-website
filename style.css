@@ -916,3 +916,71 @@ section {
     }
 }
 
+/* Fix Navbar Text & Mobile Layout Issues */
+@media (max-width: 400px) {
+    /* Show full "CYBERNEXUS" text without dots */
+    .navbar-brand:after {
+        content: "CYBERNEXUS" !important;
+    }
+    
+    .navbar-brand {
+        max-width: 180px !important;
+        font-size: 1.2rem !important;
+    }
+    
+    /* Fix box overlapping */
+    .feature-card, .testimonial-card {
+        margin-bottom: 20px !important;
+        margin-left: 5px !important;
+        margin-right: 5px !important;
+    }
+    
+    .row.g-4 {
+        gap: 1rem !important;
+    }
+    
+    /* Ensure proper spacing between boxes */
+    .col-md-4, .col-md-6 {
+        margin-bottom: 1.5rem !important;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Better navbar for medium screens */
+    .navbar-brand {
+        max-width: 220px !important;
+        font-size: 1.4rem !important;
+        white-space: nowrap;
+        overflow: visible !important;
+    }
+    
+    .navbar-brand .neon-text {
+        display: inline !important;
+    }
+    
+    /* Fix box layout */
+    .features .row, .testimonials .row {
+        margin-left: -5px !important;
+        margin-right: -5px !important;
+    }
+    
+    .feature-card, .testimonial-card {
+        margin: 0 5px 20px 5px !important;
+    }
+}
+
+/* Ensure boxes don't overlap */
+.container {
+    overflow-x: hidden;
+}
+
+.row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.col-md-4, .col-md-6 {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+}
+
