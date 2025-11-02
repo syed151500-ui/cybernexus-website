@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cybernexus</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Exo+2:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Splash Screen -->
+    <div id="splash-screen">
+        <div class="splash-particles" id="splash-particles"></div>
+        <div class="splash-logo">
+            <span class="neon-text">CYBERNEXUS</span>
+        </div>
+        <div class="loading-container">
+            <div class="loading-text">INITIALIZING SYSTEMS</div>
+            <div class="loading-bar">
+                <div class="loading-progress" id="loading-progress">
+                    <div class="percentage" id="percentage">0%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content (hidden initially) -->
+    <div id="main-content">
+        <!-- Your existing HTML content here -->
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <span class="neon-text">CYBERNEXUS</span> Technologies
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#features">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimonials">Testimonials</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="particles-container" id="particles-js"></div>
+            <div class="container">
+                <div class="row align-items-center min-vh-100">
+                    <div class="col-lg-6 hero-content">
+                        <h1 class="hero-title">
+                            <span class="neon-text">We Provide</span> Solutions!
+                        </h1>
+                        <p class="hero-subtitle">We create cutting-edge digital solutions with a futuristic approach and neon aesthetics.</p>
+                        <div class="hero-btns">
+                            <a href="#" class="btn btn-neon-primary btn-lg me-3">Get Started</a>
+                            <a href="#" class="btn btn-neon-outline btn-lg">View Portfolio</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="hero-visual">
+                            <div class="floating-cube"></div>
+                            <div class="floating-cube"></div>
+                            <div class="floating-cube"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features">
+            <div class="container">
+                <div class="row text-center mb-5">
+                    <div class="col-12">
+                        <h2 class="section-title">Our <span class="neon-text">Features</span></h2>
+                        <p class="section-subtitle">Discover the powerful capabilities of our platform</p>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <h3>Lightning Fast</h3>
+                            <p>Optimized for maximum performance with minimal loading times and seamless interactions.</p>
+                            <div class="feature-glow"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h3>Advanced Security</h3>
+                            <p>Enterprise-grade protection with encrypted data and secure authentication protocols.</p>
+                            <div class="feature-glow"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <h3>Scalable Solutions</h3>
+                            <p>Grow without limits with our flexible architecture that adapts to your needs.</p>
+                            <div class="feature-glow"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <h3>Custom Design</h3>
+                            <p>Unique visual identities crafted to reflect your brand's personality and vision.</p>
+                            <div class="feature-glow"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-sync-alt"></i>
+                            </div>
+                            <h3>Continuous Updates</h3>
+                            <p>Always stay current with regular feature enhancements and security improvements.</p>
+                            <div class="feature-glow"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-headset"></i>
+                            </div>
+                            <h3>24/7 Support</h3>
+                            <p>Round-the-clock assistance from our expert team whenever you need help.</p>
+                            <div class="feature-glow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-5 mb-lg-0">
+                        <div class="about-visual">
+                            <div class="glowing-orb"></div>
+                            <div class="circuit-lines"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 about-content">
+                        <h2 class="section-title">About <span class="neon-text">Us</span></h2>
+                        <p class="about-text">We are a team of forward-thinking developers and designers passionate about creating digital experiences that push boundaries.</p>
+                        <p class="about-text">With expertise in modern technologies and a focus on innovation, we deliver solutions that not only meet but exceed expectations.</p>
+                        <div class="stats-container">
+                            <div class="stat-item">
+                                <div class="stat-number" data-count="150">0</div>
+                                <div class="stat-label">200+ Projects Completed</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number" data-count="98">0</div>
+                                <div class="stat-label">Positive Client Satisfaction</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number" data-count="5">0</div>
+                                <div class="stat-label">9+ Years Experience</div>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-neon-primary btn-lg mt-4">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials">
+            <div class="container">
+                <div class="row text-center mb-5">
+                    <div class="col-12">
+                        <h2 class="section-title">Client <span class="neon-text">Testimonials</span></h2>
+                        <p class="section-subtitle">What our clients say about working with us</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <img src="https://www.365finance.co.uk/wp-content/uploads/2025/04/shutterstock_2438190465.jpg.webp" alt="Client" class="testimonial-img">
+                                <div>
+                                    <h4>John Mitch</h4>
+                                    <p>CEO, TechSolutions</p>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">"The Cybernexus's team delivered beyond our expectations. Our website traffic increased by 200% after the redesign."</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Client" class="testimonial-img">
+                                <div>
+                                    <h4>Michael Chen</h4>
+                                    <p>CTO, InnovateCo</p>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">"Their Cybernexus's technical expertise and attention to detail resulted in a flawless product that our users love."</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Client" class="testimonial-img">
+                                <div>
+                                    <h4>Emily Rodriguez</h4>
+                                    <p>Marketing Director</p>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">"From concept to execution, the process was smooth and professional. Highly recommended!"</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta-content text-center">
+                    <h2 class="cta-title">Ready to <span class="neon-text">Elevate</span> Your Solutions?</h2>
+                    <p class="cta-subtitle">Join hundreds of satisfied clients who have transformed their businesses with our solutions.</p>
+                    <a href="#" class="btn btn-neon-primary btn-lg px-5 py-3">Start Your Project Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                        <h4 class="footer-brand">Cyber<span class="neon-text">Nexus</span></h4>
+                        <p class="footer-text">Creating futuristic digital experiences with cutting-edge technology and stunning visuals.</p>
+                        <div class="social-icons mt-4">
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                        <h5 class="footer-title">Quick Links</h5>
+                        <ul class="footer-links">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#testimonials">Testimonials</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                        <h5 class="footer-title">Services</h5>
+                        <ul class="footer-links">
+                            <li><a href="#">Web Development</a></li>
+                            <li><a href="#">UI/UX Design</a></li>
+                            <li><a href="#">API Creation</a></li>
+                            <li><a href="#">Shopify</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4">
+                        <h5 class="footer-title">Newsletter</h5>
+                        <p class="footer-text">Subscribe to get updates on new technologies and offers.</p>
+                    </div>
+                </div>
+                <hr class="footer-divider">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="copyright">&copy; 2024 cybernexus. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <div class="footer-links">
+                            <a href="#">Privacy Policy</a>
+                            <a href="#">Terms of Service</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
