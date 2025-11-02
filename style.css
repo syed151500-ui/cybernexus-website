@@ -1027,3 +1027,46 @@ section {
     margin-bottom: 2rem !important;
 }
 
+/* Fix Mobile Scaling - Reduce Hover Effects on Touch */
+@media (max-width: 768px) {
+    .feature-card, .testimonial-card {
+        transform: none !important;
+        transition: all 0.2s ease !important;
+    }
+    
+    .feature-card:hover, .testimonial-card:hover {
+        transform: translateY(-3px) !important;
+        border-color: var(--neon-blue) !important;
+        box-shadow: 0 5px 15px rgba(0, 243, 255, 0.3) !important;
+    }
+    
+    /* Reduce scaling on mobile */
+    .feature-card:hover {
+        transform: translateY(-2px) scale(1.02) !important;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Very subtle hover on small screens */
+    .feature-card:hover, .testimonial-card:hover {
+        transform: translateY(-2px) !important;
+        box-shadow: 0 3px 10px rgba(0, 243, 255, 0.2) !important;
+    }
+    
+    .feature-card:hover {
+        transform: translateY(-2px) scale(1.01) !important;
+    }
+}
+
+/* Keep desktop scaling as before */
+@media (min-width: 769px) {
+    .feature-card:hover {
+        transform: translateY(-10px) scale(1.05) !important;
+    }
+    
+    .testimonial-card:hover {
+        transform: translateY(-5px) scale(1.03) !important;
+    }
+}
+
+
