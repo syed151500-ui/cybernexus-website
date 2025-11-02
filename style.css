@@ -984,3 +984,46 @@ section {
     padding-right: 8px !important;
 }
 
+/* Fix Mobile Box Spacing - Add More Gap */
+@media (max-width: 768px) {
+    .row.g-4 {
+        gap: 2rem !important;
+    }
+    
+    .feature-card, .testimonial-card {
+        margin-bottom: 2rem !important;
+        border: 2px solid var(--dark-border) !important;
+    }
+    
+    /* Add more space between stacked boxes */
+    .col-md-4, .col-md-6 {
+        margin-bottom: 2rem !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .row.g-4 {
+        gap: 1.5rem !important;
+    }
+    
+    .feature-card, .testimonial-card {
+        margin-bottom: 1.5rem !important;
+        padding: 2rem 1.5rem !important;
+    }
+    
+    /* Extra space for touch devices */
+    .features, .testimonials {
+        padding: 80px 0 !important;
+    }
+}
+
+/* Ensure boxes have proper separation */
+.feature-card, .testimonial-card {
+    transition: all 0.3s ease !important;
+}
+
+.feature-card:hover, .testimonial-card:hover {
+    transform: translateY(-5px) !important;
+    margin-bottom: 2rem !important;
+}
+
