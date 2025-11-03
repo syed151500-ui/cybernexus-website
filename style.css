@@ -1103,5 +1103,104 @@ section {
         box-shadow: 0 4px 12px rgba(185, 103, 255, 0.2) !important;
     }
 }
+/* ===== MOBILE BUTTONS & BOXES FIX ===== */
+
+/* Fix Buttons on Mobile */
+@media (max-width: 768px) {
+    .btn-neon-primary, .btn-neon-outline {
+        padding: 1rem 1.5rem !important;
+        font-size: 1.1rem !important;
+        min-height: 50px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        margin: 10px 0 !important;
+    }
+    
+    .hero-btns {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 15px !important;
+        width: 100% !important;
+        padding: 0 10px !important;
+    }
+    
+    .hero-btns .btn {
+        width: 100% !important;
+        margin: 5px 0 !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .btn-neon-primary, .btn-neon-outline {
+        padding: 0.9rem 1.2rem !important;
+        font-size: 1rem !important;
+        min-height: 45px !important;
+    }
+}
+
+/* Fix Boxes on Mobile */
+@media (max-width: 768px) {
+    .feature-card, .testimonial-card {
+        margin: 0 5px 25px 5px !important;
+        padding: 1.5rem 1rem !important;
+        min-height: auto !important;
+    }
+    
+    .features .row, .testimonials .row {
+        margin: 0 -5px !important;
+    }
+    
+    .feature-icon {
+        width: 60px !important;
+        height: 60px !important;
+        font-size: 1.5rem !important;
+        margin-bottom: 1rem !important;
+    }
+    
+    .feature-card h3 {
+        font-size: 1.3rem !important;
+        margin-bottom: 0.8rem !important;
+    }
+    
+    .feature-card p, .testimonial-text {
+        font-size: 0.9rem !important;
+        line-height: 1.5 !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .feature-card, .testimonial-card {
+        margin: 0 2px 20px 2px !important;
+        padding: 1.2rem 0.8rem !important;
+    }
+    
+    .feature-icon {
+        width: 50px !important;
+        height: 50px !important;
+        font-size: 1.2rem !important;
+    }
+    
+    .testimonial-header {
+        flex-direction: column !important;
+        text-align: center !important;
+    }
+    
+    .testimonial-img {
+        margin-right: 0 !important;
+        margin-bottom: 10px !important;
+    }
+}
+
+/* Ensure proper touch targets */
+.btn, .feature-card, .testimonial-card {
+    cursor: pointer !important;
+}
+
+/* Prevent text overflow in boxes */
+.feature-card h3, .testimonial-header h4 {
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+}
 
 
